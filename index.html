@@ -1,66 +1,15 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f5efe4">
-  <meta name="description" content="一个简洁、公开可用、数据仅保存在浏览器里的番茄日程。">
-  <title>番茄日程</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="番茄日程首页"><span aria-hidden="true">●</span> 番茄日程</a>
-    <p>把今天过成清晰的一小格一小格。</p>
-  </header>
-
-  <main class="layout">
-    <section class="timer-card card" aria-labelledby="timer-title">
-      <div class="eyebrow">FOCUS TIMER</div>
-      <h1 id="timer-title">此刻，只做一件事</h1>
-      <div class="mode-tabs" aria-label="选择计时长度">
-        <button class="mode active" data-seconds="1500" data-label="专注">专注 25</button>
-        <button class="mode" data-seconds="300" data-label="短休息">短休 5</button>
-        <button class="mode" data-seconds="900" data-label="长休息">长休 15</button>
-      </div>
-      <div id="time" class="time" role="timer" aria-live="polite">25:00</div>
-      <p id="timer-status" class="timer-status">准备开始 · 专注</p>
-      <div class="timer-actions">
-        <button id="start" class="primary">开始</button>
-        <button id="pause" class="secondary">暂停</button>
-        <button id="reset" class="ghost">重置</button>
-      </div>
-    </section>
-
-    <section class="tasks-card card" aria-labelledby="tasks-title">
-      <div class="section-heading">
-        <div><div class="eyebrow">TODAY</div><h2 id="tasks-title">今日小事</h2></div>
-        <span id="task-count" class="count">0 项</span>
-      </div>
-      <form id="task-form" class="task-form">
-        <label class="sr-only" for="task-input">添加一件今日小事</label>
-        <input id="task-input" maxlength="80" required placeholder="写下一件要完成的小事…">
-        <button class="primary" type="submit">添加</button>
-      </form>
-      <ul id="task-list" class="task-list"></ul>
-      <p id="task-empty" class="empty">今天还没有安排。先写下一件最小的事吧。</p>
-    </section>
-
-    <section class="history-card card" aria-labelledby="history-title">
-      <div class="section-heading">
-        <div><div class="eyebrow">MOMENTS</div><h2 id="history-title">专注足迹</h2></div>
-        <button id="clear-history" class="text-button">清空记录</button>
-      </div>
-      <ul id="session-list" class="session-list"></ul>
-      <p id="session-empty" class="empty">完成一个专注番茄后，它会留在这里。</p>
-    </section>
-
-    <aside class="privacy-note">
-      <strong>只属于这台设备</strong>
-      <span>数据仅保存在当前浏览器；清除浏览器数据或更换设备后不会同步。</span>
-    </aside>
-  </main>
-  <footer>慢一点没关系，重要的是回到此刻。</footer>
-  <script type="module" src="./js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="把一天切成专注、休息和清晰可执行的任务。" />
+    <link rel="icon" href="/pomodoro-day/favicon.svg" />
+    <title>番茄日程</title>
+    <script type="module" crossorigin src="/pomodoro-day/assets/index-DcV-sCnn.js"></script>
+    <link rel="stylesheet" crossorigin href="/pomodoro-day/assets/index-DMT5mmgp.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
